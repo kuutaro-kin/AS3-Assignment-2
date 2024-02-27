@@ -1,20 +1,54 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-searchbar
+      show-clear-button="focus"
+      value=" "
+      placeholder="Search..."
+    ></ion-searchbar>
+    <ion-button aria-label="Menu" slot="end">
+      <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+    </ion-button>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <h2>TOP FAVOURITED RECIPES</h2>
+  <ion-card>
+    <img
+      alt="Lasagna"
+      src="https://static01.nyt.com/images/2023/08/31/multimedia/RS-Lasagna-hkjl/RS-Lasagna-hkjl-superJumbo.jpg"
+    />
+    <ion-card-title>Lasagna</ion-card-title>
+    <ion-card-content>
+      Lasang. Garfield... his canon is there, the puzzle pieces are all
+      available, but it is all thrown together in a confusing mess. What IS the
+      solution? <br />
+      (1/3)
+    </ion-card-content>
+  </ion-card>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="tab1">
+        <ion-tab-button tab="recipes">
+          <ion-button size="small">Recipes</ion-button>
+        </ion-tab-button>
+      </ion-tab-button>
+
+      <ion-tab-button tab="tab2">
+        <ion-icon name="heart"></ion-icon>
+        <ion-label>Favorites</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="tab3">
+        <ion-icon name="bookmark"></ion-icon>
+        <ion-label>Bookmarks</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="tab4">
+        <ion-icon name="person"></ion-icon>
+        <ion-label>User</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
 </ion-content>
