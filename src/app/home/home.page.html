@@ -1,13 +1,13 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-searchbar
-      show-clear-button="focus"
-      value=" "
-      placeholder="Search..."
-    ></ion-searchbar>
-    <ion-button aria-label="Menu" slot="end">
-      <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
-    </ion-button>
+    <ion-searchbar show-clear-button="focus" value=" " placeholder="Search...">
+    </ion-searchbar>
+    <ion-buttons slot="end">
+      <ion-button aria-label="Menu">
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        <ion-label>Menu</ion-label>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
@@ -30,9 +30,13 @@
   <ion-tabs>
     <ion-tab-bar slot="bottom">
       <ion-tab-button tab="tab1">
-        <ion-tab-button tab="recipes">
-          <ion-button size="small">Recipes</ion-button>
-        </ion-tab-button>
+        <ion-icon name="list"></ion-icon>
+        <button
+          ion-button
+          (click)="navigateToSecondPage()"
+          onclick="window.location.href='second-page.html'">
+          Recipes
+        </button>
       </ion-tab-button>
 
       <ion-tab-button tab="tab2">
