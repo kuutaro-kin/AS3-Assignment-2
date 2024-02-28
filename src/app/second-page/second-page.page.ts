@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';//, OnInit 
 // import { CommonModule } from '@angular/common'; IonicModule, CommonModule, FormsModule,
 // import { FormsModule } from '@angular/forms';
 // import { IonicModule } from '@ionic/angular';

@@ -1,13 +1,66 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>ThirdPage</ion-title>
+    <ion-buttons slot="start">
+      <ion-button aria-label="Back" click="navigateToSecondPage()">
+        <ion-label>Back</ion-label>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button aria-label="Menu">
+        <ion-label>Menu</ion-label>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">ThirdPage</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <h2>Fettucine Alfredo</h2>
+  <ion-img
+    src="https://www.aheadofthyme.com/wp-content/uploads/2021/09/fettuccine-alfredo.jpg"
+  >
+  </ion-img>
+  <p class="author">Author: Sam & Dan, Ahead of Thyme</p>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <h5 class="cont">Servings</h5>
+        <p>3-4 plates</p>
+      </ion-col>
+      <ion-col>
+        <h5 class="cont">Prep Time</h5>
+        <p>15 mins</p>
+      </ion-col>
+      <ion-col>
+        <h5 class="cont">Cook Time</h5>
+        <p>20 mins</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <p>
+    Fettuccine Alfredo is a classic Italian pasta dish made with fettuccine
+    noodles, butter, cream, and Parmesan cheese. It is a rich and creamy dish
+    that is perfect for a special occasion or a comforting meal. Fettuccine....
+    mmm yummy. Fun story, a friend of mine thought fettuccine was the term for
+    those people who loves BLB. I was like, "No, fettucine is a pasta dish..."
+  </p>
+
+  <h3>Ingredients</h3>
+  <ul>
+    <li>8 oz fettuccine pasta</li>
+    <li>1/2 cup unsalted butter</li>
+    <li>1 cup heavy cream</li>
+    <li>1 cup grated Parmesan cheese</li>
+    <li>1/4 teaspoon salt</li>
+    <li>1/4 teaspoon black pepper</li>
+    <li>1/4 teaspoon nutmeg</li>
+    <li>1/4 cup chopped fresh parsley</li>
+  </ul>
+
+  <br />
+  <br />
+  <br />
+
+  <button (click)="playVideo()">Play Video</button>
 </ion-content>
