@@ -1,0 +1,61 @@
+ion-searchbar {
+    height: 30px;
+    width: 100%;
+    color: #4d6f99;
+  }
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #001d42;
+    margin: 20px;
+}
+
+#rlt {
+    font-size: 20px;
+    color: aliceblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+.image-card {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.categ {
+    color: aliceblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.image-crop {
+    width: 100%; 
+    height: 120px; 
+    object-fit: cover;
+    padding: 10px; 
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+ion-list {
+    background-color: transparent;
+}
+
+.isi, .dishname {
+    color: aliceblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: left;
+}
+
+.dishname {
+    font-size: 25px;
+    font-weight: bolder;
+}
+

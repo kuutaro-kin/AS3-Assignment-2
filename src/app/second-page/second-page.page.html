@@ -1,13 +1,118 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>SecondPage</ion-title>
+    <ion-buttons slot="start">
+      <ion-button aria-label="Back">
+        <ion-label>Back</ion-label>
+      </ion-button>
+    </ion-buttons>
+    <h2 id="rlt">Recipe List</h2>
+    <ion-buttons slot="end">
+      <ion-button aria-label="Menu">
+        <ion-label>Menu</ion-label>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">SecondPage</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <h2>CATEGORIES</h2>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card>
+          <ion-card-content>
+            <ion-img
+              class="image-card"
+              src="https://www.eatingwell.com/thmb/t1T6R6ZAyG6j8-39Bdmh6eAr0F4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/egg-tartine-892cac2657114696ab634792d0bdcb4b.jpg"
+            ></ion-img>
+            <ion-card-title class="categ"> Breakfast </ion-card-title>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card>
+          <ion-card-content>
+            <ion-img
+              class="image-card"
+              src="https://www.lacademie.com/wp-content/uploads/2022/03/indian-lunch-recipes-500x500.jpg"
+            ></ion-img>
+            <ion-card-title class="categ"> Lunch </ion-card-title>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card>
+          <ion-card-content>
+            <ion-img
+              class="image-card"
+              src="https://www.southernliving.com/thmb/GMspI3hVP98ubTksEuQFi4_Fy5g=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/2548601_qfsba_rice_with_scallops_152_0_0_0-2000-d3695c78260d40ffb6910cce828c4541.jpg"
+            ></ion-img>
+            <ion-card-title class="categ"> Dinner </ion-card-title>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card>
+          <ion-card-content>
+            <ion-img
+              class="image-card"
+              src="https://www.adm.com/globalassets/products--services/human-nutrition/categories/beverages/adobestock_435395998_updated.jpeg"
+            ></ion-img>
+            <ion-card-title class="categ"> Beverages </ion-card-title>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-searchbar show-clear-button="focus" value=" " placeholder="Search...">
+  </ion-searchbar>
+
+  <ion-list>
+    <ion-card>
+      <ion-row>
+        <ion-img
+          class="image-crop"
+          src="https://www.aheadofthyme.com/wp-content/uploads/2021/09/fettuccine-alfredo.jpg"
+        ></ion-img>
+        <ion-card-header>
+          <ion-card-title class="dishname"> Fettuccine Alfredo </ion-card-title>
+          <ion-card-subtitle class="isi">
+            Fettuccine alfredo is a classic Italian pasta dish that is rich,
+            creamy, and delicious.
+          </ion-card-subtitle>
+        </ion-card-header>
+      </ion-row>
+    </ion-card>
+    <ion-card>
+      <ion-row>
+        <ion-img
+          class="image-crop"
+          src="https://www.aheadofthyme.com/wp-content/uploads/2021/09/fettuccine-alfredo.jpg"
+        ></ion-img>
+        <ion-card-header>
+          <ion-card-title class="dishname"> Fettuccine Alfredo </ion-card-title>
+          <ion-card-subtitle class="isi">
+            Fettuccine alfredo is a classic Italian pasta dish that is rich,
+            creamy, and delicious.
+          </ion-card-subtitle>
+        </ion-card-header>
+      </ion-row>
+    </ion-card>
+    <ion-card>
+      <ion-row>
+        <ion-img
+          class="image-crop"
+          src="https://www.aheadofthyme.com/wp-content/uploads/2021/09/fettuccine-alfredo.jpg"
+        ></ion-img>
+        <ion-card-header>
+          <ion-card-title class="dishname"> Fettuccine Alfredo </ion-card-title>
+          <ion-card-subtitle class="isi">
+            Fettuccine alfredo is a classic Italian pasta dish that is rich,
+            creamy, and delicious.
+          </ion-card-subtitle>
+        </ion-card-header>
+      </ion-row>
+    </ion-card>
+  </ion-list>
 </ion-content>
