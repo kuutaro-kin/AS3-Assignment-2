@@ -13,7 +13,7 @@ export class HomePage {
 
   }
   navigateToSecondPage() {
-  this.router.navigateByUrl('/second');
+  this.router.navigateByUrl('/second-page/second-page.page');
   }
   
 }

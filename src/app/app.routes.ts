@@ -3,7 +3,7 @@ import { Routes } from '@angular/router';
 export const routes: Routes = [
   {
     path: '',
-    redirectTo: 'third-page', //change the path name next time to change pages (for now)
+    redirectTo: 'home', //change the path name next time to change pages (for now)
     pathMatch: 'full',
   },
   {
