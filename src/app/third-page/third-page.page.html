@@ -1,25 +1,24 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-button aria-label="Back" click="navigateToSecondPage()">
-        <ion-label>Back</ion-label>
-      </ion-button>
-    </ion-buttons>
-    <ion-buttons slot="end">
-      <ion-button aria-label="Menu">
-        <ion-label>Menu</ion-label>
-      </ion-button>
-    </ion-buttons>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
+  <ion-button fill="clear" size="medium">
+    <ion-icon slot="icon-only" name="chevron-back"></ion-icon>
+  </ion-button>
   <h2>Fettucine Alfredo</h2>
   <ion-img
     src="https://www.aheadofthyme.com/wp-content/uploads/2021/09/fettuccine-alfredo.jpg"
   >
   </ion-img>
-  <p class="author">Author: Sam & Dan, Ahead of Thyme</p>
+  <p class="author">Author: Sam & Dan - Ahead of Thyme</p>
+  <div class="icon-buttons">
+    <ion-button fill="clear" size="small">
+      <ion-icon slot="icon-only" name="heart"></ion-icon>
+    </ion-button>
+    <ion-button fill="clear" size="small">
+      <ion-icon slot="icon-only" name="bookmark"></ion-icon>
+    </ion-button>
+    <ion-button fill="clear" size="small">
+      <ion-icon slot="icon-only" name="share"></ion-icon>
+    </ion-button>
+  </div>
 
   <ion-grid>
     <ion-row>

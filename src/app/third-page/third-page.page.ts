@@ -4,6 +4,9 @@ import { Component} from '@angular/core';
 // import { IonicModule } from '@ionic/angular';
 import { IonHeader, IonToolbar, IonTitle, IonContent, IonButtons, IonCardHeader, IonCard, IonIcon, IonButton, IonCardTitle, IonCardContent, IonImg, IonFooter, IonSearchbar, IonTabs, IonTabButton, IonLabel, IonTabBar, IonGrid, IonRow, IonCol, IonList, IonCardSubtitle } from '@ionic/angular/standalone';
 import { Router } from '@angular/router';
+import { addIcons } from 'ionicons';
+import { chevronBack } from 'ionicons/icons';
+
 @Component({
   selector: 'app-third-page',
   templateUrl: './third-page.page.html',
@@ -13,7 +16,9 @@ import { Router } from '@angular/router';
 })
 export class ThirdPagePage{
 
-  constructor(private router: Router) { }
+  constructor(private router: Router) {
+    addIcons({ chevronBack });
+  }
 
   navigateToSecondPage() {
     this.router.navigateByUrl('/second');

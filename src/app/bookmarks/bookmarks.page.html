@@ -1,0 +1,14 @@
+<ion-content [fullscreen]="true">
+  <ion-button fill="clear" size="medium">
+    <ion-icon slot="icon-only" name="chevron-back"></ion-icon>
+  </ion-button>
+  <h2>BOOKMARKS</h2>
+  <ion-card [routerLink]="['/recipe-detail']">
+    <img
+      alt="Fettucine Alfredo"
+      src="https://www.aheadofthyme.com/wp-content/uploads/2021/09/fettuccine-alfredo.jpg"
+    />
+    <ion-card-title>Fettucine Alfredo</ion-card-title>
+  </ion-card>
+  <p [routerLink]="['/recipes']">+ Add more...</p>
+</ion-content>

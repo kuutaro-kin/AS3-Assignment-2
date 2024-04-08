@@ -12,11 +12,11 @@ export const routes: Routes = [
     loadComponent: () => import('./home/home.page').then((m) => m.HomePage),
   },
   {
-    path: 'second-page',
+    path: 'recipes',
     loadComponent: () => import('./second-page/second-page.page').then( m => m.SecondPagePage)
   },
   {
-    path: 'third-page',
+    path: 'recipe-detail',
     loadComponent: () => import('./third-page/third-page.page').then( m => m.ThirdPagePage)
   },
   {
@@ -36,5 +36,17 @@ export const routes: Routes = [
   {
     path: 'tabs',
     loadComponent: () => import('./tabs/tabs.page').then( m => m.TabsPage)
+  },
+  {
+    path: 'favorites',
+    loadComponent: () => import('./favorites/favorites.page').then( m => m.FavoritesPage)
+  },
+  {
+    path: 'bookmarks',
+    loadComponent: () => import('./bookmarks/bookmarks.page').then( m => m.BookmarksPage)
+  },
+  {
+    path: 'settings',
+    loadComponent: () => import('./settings/settings.page').then( m => m.SettingsPage)
   },
 ];
