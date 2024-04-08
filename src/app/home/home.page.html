@@ -1,42 +1,48 @@
-<ion-header [translucent]="true">
+<!-- <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-searchbar show-clear-button="focus" value=" " placeholder="Search...">
     </ion-searchbar>
-    <ion-buttons slot="end">
-      <ion-button aria-label="Menu">
-        <ion-label>Menu</ion-label>
-      </ion-button>
-    </ion-buttons>
   </ion-toolbar>
-</ion-header>
+</ion-header> -->
 
 <ion-content [fullscreen]="true">
+  <ion-searchbar
+    show-clear-button="focus"
+    value=" "
+    placeholder="Search..."
+  ></ion-searchbar>
   <h2>TOP FAVOURITED RECIPES</h2>
   <ion-card>
     <img
       alt="Lasagna"
       src="https://static01.nyt.com/images/2023/08/31/multimedia/RS-Lasagna-hkjl/RS-Lasagna-hkjl-superJumbo.jpg"
     />
+    <ion-button fill="clear" size="small">
+      <ion-icon slot="icon-only" name="heart"></ion-icon>
+    </ion-button>
+    <ion-button fill="clear" size="small">
+      <ion-icon slot="icon-only" name="bookmark"></ion-icon>
+    </ion-button>
+    <ion-button fill="clear" size="small">
+      <ion-icon slot="icon-only" name="share"></ion-icon>
+    </ion-button>
     <ion-card-title>Lasagna</ion-card-title>
     <ion-card-content>
-      Lasang. Garfield... his canon is there, the puzzle pieces are all
-      available, but it is all thrown together in a confusing mess. What IS the
-      solution? <br />
-      (1/3)
+      An Italian classic featuring layers of lasagna noodles, ricotta cheese,
+      savory tomato sauce, and melted mozzarella, baked to golden perfection.
     </ion-card-content>
   </ion-card>
 
   <ion-tabs>
     <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="tab5">
+        <ion-icon name="home"></ion-icon>
+        <ion-label>Home</ion-label>
+      </ion-tab-button>
+
       <ion-tab-button tab="tab1">
         <ion-icon name="list"></ion-icon>
-        <button
-          ion-button
-          (click)="navigateToSecondPage()"
-          onclick="window.location.href='second-page.html'"
-        >
-          Recipes
-        </button>
+        <ion-label>Recipes</ion-label>
       </ion-tab-button>
 
       <ion-tab-button tab="tab2">
@@ -50,8 +56,8 @@
       </ion-tab-button>
 
       <ion-tab-button tab="tab4">
-        <ion-icon name="person"></ion-icon>
-        <ion-label>User</ion-label>
+        <ion-icon name="settings"></ion-icon>
+        <ion-label>Settings</ion-label>
       </ion-tab-button>
     </ion-tab-bar>
   </ion-tabs>

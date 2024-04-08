@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+import { TabsPage } from './tabs/tabs.page';
 
 export const routes: Routes = [
   {
@@ -17,5 +18,23 @@ export const routes: Routes = [
   {
     path: 'third-page',
     loadComponent: () => import('./third-page/third-page.page').then( m => m.ThirdPagePage)
+  },
+  {
+    path: 'tabs',
+    component: TabsPage,
+    children: [
+      {
+        path: 'recipes',
+        loadComponent: () =>  import('./second-page/second-page.page').then( m => m.SecondPagePage)
+      },
+      {
+        path: 'home',
+        loadComponent: () => import('./home/home.page').then( m => m.HomePage)
+      }
+    ]
+  },
+  {
+    path: 'tabs',
+    loadComponent: () => import('./tabs/tabs.page').then( m => m.TabsPage)
   },
 ];

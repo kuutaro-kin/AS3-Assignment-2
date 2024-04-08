@@ -1,20 +1,7 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-button aria-label="Back">
-        <ion-label>Back</ion-label>
-      </ion-button>
-    </ion-buttons>
-    <h2 id="rlt">Recipe List</h2>
-    <ion-buttons slot="end">
-      <ion-button aria-label="Menu">
-        <ion-label>Menu</ion-label>
-      </ion-button>
-    </ion-buttons>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
+  <ion-button fill="clear" size="medium">
+    <ion-icon slot="icon-only" name="chevron-back"></ion-icon>
+  </ion-button>
   <h2>CATEGORIES</h2>
   <ion-grid>
     <ion-row>
@@ -78,8 +65,9 @@
         <ion-card-header>
           <ion-card-title class="dishname"> Fettuccine Alfredo </ion-card-title>
           <ion-card-subtitle class="isi">
-            Fettuccine alfredo is a classic Italian pasta dish that is rich,
-            creamy, and delicious.
+            An Italian classic featuring layers of lasagna noodles, ricotta
+            cheese, savory tomato sauce, and melted mozzarella, baked to golden
+            perfection.
           </ion-card-subtitle>
         </ion-card-header>
       </ion-row>
@@ -88,13 +76,14 @@
       <ion-row>
         <ion-img
           class="image-crop"
-          src="https://www.aheadofthyme.com/wp-content/uploads/2021/09/fettuccine-alfredo.jpg"
+          src="https://www.acozykitchen.com/wp-content/uploads/2017/04/IcedMatchaLatte-7.jpg"
         ></ion-img>
         <ion-card-header>
-          <ion-card-title class="dishname"> Fettuccine Alfredo </ion-card-title>
+          <ion-card-title class="dishname"> Iced Matcha Latte </ion-card-title>
           <ion-card-subtitle class="isi">
-            Fettuccine alfredo is a classic Italian pasta dish that is rich,
-            creamy, and delicious.
+            An iced matcha latte is a cool, creamy drink made with matcha
+            powder, milk, and ice, offering a refreshing and slightly sweet
+            taste perfect for warm weather.
           </ion-card-subtitle>
         </ion-card-header>
       </ion-row>

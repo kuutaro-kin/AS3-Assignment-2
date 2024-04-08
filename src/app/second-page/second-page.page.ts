@@ -2,8 +2,9 @@ import { Component } from '@angular/core';//, OnInit
 // import { CommonModule } from '@angular/common'; IonicModule, CommonModule, FormsModule,
 // import { FormsModule } from '@angular/forms';
 // import { IonicModule } from '@ionic/angular';
-//import { addIcons } from 'ionicons';
 import { IonHeader, IonToolbar, IonTitle, IonContent, IonButtons, IonCardHeader, IonCard, IonIcon, IonButton, IonCardTitle, IonCardContent, IonImg, IonFooter, IonSearchbar, IonTabs, IonTabButton, IonLabel, IonTabBar, IonGrid, IonRow, IonCol, IonList, IonCardSubtitle } from '@ionic/angular/standalone';
+import { addIcons } from 'ionicons';
+import { chevronBack } from 'ionicons/icons';
 
 @Component({
   selector: 'app-second-page',
@@ -14,7 +15,9 @@ import { IonHeader, IonToolbar, IonTitle, IonContent, IonButtons, IonCardHeader,
 })
 export class SecondPagePage{
 
-  constructor() { }
+  constructor() { 
+    addIcons({ chevronBack });
+  }
 
   // ngOnInit() { implements OnInit 
   // }
